@@ -14,7 +14,7 @@ const initialState: TModalState = {
     taskId: "task-0",
     taskName: "task-0",
     taskDescription: "task description",
-    takeOwner: "kim",
+    taskOwner: "kim",
   },
 };
 const modalSlice = createSlice({

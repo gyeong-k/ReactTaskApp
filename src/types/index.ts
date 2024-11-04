@@ -2,7 +2,7 @@ export interface Itask {
   taskId: string;
   taskName: string;
   taskDescription: string;
-  takeOwner: string;
+  taskOwner: string;
 }
 
 export interface ILogItem {
@@ -10,4 +10,16 @@ export interface ILogItem {
   logAuthor: string;
   logMessage: string;
   logTimestamp: string;
+}
+
+export interface IBoard {
+  boardId: string;
+  boardName: string;
+  lists: IList[];
+}
+
+export interface IList {
+  listId: string;
+  listName: string;
+  tasks: Itask[];
 }
